@@ -41,7 +41,7 @@ Expected result:
 Tea delivered in 1.5 minutes
 
 5.3) Checking the delivery time of water.
-Precondition: customer ordered tea
+Precondition: customer ordered water
 Steps:
 1. Robot accepted the order and went to the kitchen;
 2. Robot placed an order for the kitchen;
@@ -50,24 +50,22 @@ Expected result:
 Water delivered in 1 minute
 
 5.4) Checking the delivery of the maximum number of drinks.
-Precondition: customer ordered 5 drinks
+Precondition: customer ordered 5 drinks (water)
 Steps:
 1. Robot accepted the order and went to the kitchen
 2. Robot placed an order for the kitchen
 3. Robot took the order from the kitchen and gave it to the client
 Expected result:
-Received 5 drinks 
+Received 5 drinks, delivered in 1 minute 
 
 5.5) Checking the delivery above the maximum number of drinks.
-Precondition: customer ordered 6 drinks
+Precondition: customer ordered 6 drinks (water)
 Steps:
 1. Robot accepted the order and went to the kitchen
 2. Robot placed an order for the kitchen
 3. Robot took the order from the kitchen and gave it to the client
-Actual result:
-Received 5 drinks at a time
 Expected result:
-Received 6 drinks at a time
+Received 5 drinks, delivered in 1 minute
 
 5.6) Checking the delivery of drinks with the issue of change
 Precondition: customer ordered a drink
